@@ -36,8 +36,11 @@ maxLength = 0
 for l in words:
     #set counter to 0
     maxCount = 0
-    for w in l:
+    for w in  l:
         maxCount += 1
+    if str(sys.argv[0]) in l :
+        #have to remove the first argument somehow
+        continue
     #if counter is greater than the maxLength, we are done
     if (maxCount > maxLength):
         maxLength = maxCount
