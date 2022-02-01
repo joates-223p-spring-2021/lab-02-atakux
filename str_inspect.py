@@ -9,9 +9,10 @@ atakux707@csu.fullerton.edu
 import sys
 
 
-cmdInput = input() #receive user input
+cmdInput = str(sys.argv) #receive user input
 
 words = cmdInput.split()
+
 
 #find the length of the minimum word
 #set minLength to the length of the user input
@@ -53,6 +54,6 @@ else:
     
 #print the longest word and its length
 print("Longest word: ", large)
-print("It is ", maxLength, " characters")
+print("It is ", maxLength, " characters\n")
 
-print(sys.argv)
+print(sys.argv[0])
