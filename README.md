@@ -1,3 +1,4 @@
+[![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=6867731&assignment_repo_type=AssignmentRepo)
 # CPSC 223P Lab - 02 (Strings)
 
 In this lab you will write another simple Python program; but this time it will do a little more than print "Hello, world!".  This exercise is intended to get you started using Python variables and working with strings.  In the process you will likely need to use some basic Python language constructs such as loops, module imports and built-in functions.
