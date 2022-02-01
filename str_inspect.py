@@ -64,6 +64,4 @@ else:
     
 #print the longest word and its length
 print("Longest word:", large)
-print("It is", maxLength, "characters\n")
-
-print(sys.argv[0])
+print("It is", maxLength, "characters")
