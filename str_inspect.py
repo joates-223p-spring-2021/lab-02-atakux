@@ -11,7 +11,7 @@ import sys
 
 cmdInput = str(sys.argv) #receive user input
 
-words = cmdInput.split()
+words = cmdInput.split() #split the user input into words
 
 
 #find the length of the minimum word
@@ -26,8 +26,10 @@ for s in words:
     #if counter is less than the minLength, we are done
     if (minCount < minLength):
         minLength = minCount
-        #set small to be from index 0 to the end of minlength for printing
+        #set small to be from index 0 to the end of minlength for printing the word
         small = s[0:minLength]
+
+
 
 #find the length of the maximum word
 #set maxLength to 0
@@ -39,24 +41,29 @@ for l in words:
     for w in  l:
         maxCount += 1
     if str(sys.argv[0]) in l :
-        #have to remove the first argument somehow
+        #remove the argument sys.argv[0] (name of py file)
         continue
     #if counter is greater than the maxLength, we are done
     if (maxCount > maxLength):
         maxLength = maxCount
-        #set large to be from index 0 to the end of maxLength for printing
+        #set large to be from index 0 to the end of maxLength for printing the word
         large = l[0:maxLength]
 
+
+
 #print the shortest word and its length
-print("Shortest word: ", small)
-#if its length is 1 it prints character rather than characters
+print("Shortest word:", small)
+
+#check if length is 1 it prints character rather than characters
 if minLength == 1:
-    print("It is ", minLength, " character")
+    print("It is", minLength, "character")
 else:
-    print("It is ", minLength, " characters")
+    print("It is", minLength, "characters")
+    
+
     
 #print the longest word and its length
-print("Longest word: ", large)
-print("It is ", maxLength, " characters\n")
+print("Longest word:", large)
+print("It is", maxLength, "characters\n")
 
 print(sys.argv[0])
